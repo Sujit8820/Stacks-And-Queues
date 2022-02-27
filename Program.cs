@@ -20,6 +20,7 @@ namespace Stacks_And_Queues
 
             operation.Display();
             Console.WriteLine("==============");
+            operation.Dequeu();
            
 
 

@@ -37,7 +37,7 @@ namespace Stacks_And_Queues
                 Console.WriteLine("========");
                 Display();
             }
-           
+
 
         }
 
@@ -45,19 +45,33 @@ namespace Stacks_And_Queues
         {
             if (Tail == null)
             {
-                Tail=data;
+                Tail = data;
             }
             else
             {
                 Node temp = data;
                 Node p = Tail;
-                while(p.next != null)
+                while (p.next != null)
                 {
                     p = p.next;
                 }
                 p.next = temp;
 
             }
+        }
+
+        public void Dequeu()
+        {
+
+            while (Tail != null)
+            {
+                Tail = Tail.next;
+                Display();
+                Console.WriteLine("=======");
+
+            }
+
+
         }
         public void Display()
         {
