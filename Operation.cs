@@ -8,11 +8,11 @@ namespace Stacks_And_Queues
 {
     public class Operation
     {
-       public  Node Tail = null;
+        public Node Tail = null;
 
         public void Push(Node data)
         {
-            if(Tail == null)
+            if (Tail == null)
             {
                 Tail = data;
             }
@@ -21,8 +21,23 @@ namespace Stacks_And_Queues
                 Node temp = data;
                 temp.next = Tail;
                 Tail = temp;
-               
+
             }
+
+        }
+
+        public void PeakAndPop()
+        {
+
+            while (Tail != null)
+            {
+                Node p = Tail;
+                Console.WriteLine("\nPeak " + p.data);
+                Tail = Tail.next;
+                Console.WriteLine("========");
+                Display();
+            }
+           
 
         }
         public void Display()

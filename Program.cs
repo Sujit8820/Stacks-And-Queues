@@ -19,6 +19,10 @@ namespace Stacks_And_Queues
             operation.Push(node3);
 
             operation.Display();
+            Console.WriteLine("==============");
+            operation.PeakAndPop();
+
+
 
 
 
