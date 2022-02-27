@@ -60,7 +60,7 @@ namespace Stacks_And_Queues
             }
         }
 
-        public void Dequeu()
+        public void Dequeue()
         {
 
             while (Tail != null)
