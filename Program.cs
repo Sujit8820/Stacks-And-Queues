@@ -10,17 +10,17 @@ namespace Stacks_And_Queues
             Console.WriteLine("Wellcome to Stacks and Queues");
             Operation operation = new Operation();
 
-            Node node1 = new Node(70);
+            Node node1 = new Node(56);
             Node node2 = new Node(30);
-            Node node3 = new Node(56);
+            Node node3 = new Node(70);
 
-            operation.Push(node1);
-            operation.Push(node2);
-            operation.Push(node3);
+            operation.Enqueu(node1);
+            operation.Enqueu(node2);
+            operation.Enqueu(node3);
 
             operation.Display();
             Console.WriteLine("==============");
-            operation.PeakAndPop();
+           
 
 
 

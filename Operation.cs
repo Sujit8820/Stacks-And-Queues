@@ -40,6 +40,25 @@ namespace Stacks_And_Queues
            
 
         }
+
+        public void Enqueu(Node data)
+        {
+            if (Tail == null)
+            {
+                Tail=data;
+            }
+            else
+            {
+                Node temp = data;
+                Node p = Tail;
+                while(p.next != null)
+                {
+                    p = p.next;
+                }
+                p.next = temp;
+
+            }
+        }
         public void Display()
         {
             if (Tail == null)
